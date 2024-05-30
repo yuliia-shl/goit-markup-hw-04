@@ -71,6 +71,8 @@ img {
 
 .header {
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    background: #fff;
 }
 
 .header-container {
@@ -112,6 +114,29 @@ img {
     padding: 24px 0;
 }
 
+.menu-link-active {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-list-item {
+    /* display: flex;
+    justify-content: center;
+    align-items: flex-end; */
+}
+
+.header-menu-link:nth-child(1)::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    display: block;
+}
+
 .header-menu-link:hover,
 .header-menu-link:focus {
     color: #404bbf;
@@ -120,6 +145,7 @@ img {
 .header-menu-link:active {
     color: #404bbf;
 }
+
 
 .header-contacts {
     line-height: 1.5;
@@ -149,7 +175,15 @@ img {
 .hero {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
+
+.hero-container {}
 
 .hero-title {
     font-weight: 700;
@@ -200,6 +234,20 @@ img {
     width: calc((100% - 3 * 24px) / 4);
 }
 
+.techniques-item {
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.technique-icon {}
+
 .techniques-subtitle {
     margin-bottom: 8px;
 }
@@ -230,9 +278,8 @@ img {
 .team-list-item {
     background: #ffffff;
     border-radius: 0 0 4px 4px;
-
-    width: calc((100% - 24 * 3) / 4);
-    /* flex-basis: calc((100% - 3 * 24px) / 4); */
+    width: calc((100% - 72px) / 4);
+    /* flex-basis: calc((100% - 72px) / 4); */
 }
 
 .team-list-descr {
@@ -253,6 +300,38 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.network-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.network-list-item {
+    width: 40px;
+    height: 40px;
+}
+
+
+.network-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    fill: #f4f4fd;
+    width: 100%;
+    height: 100%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.network-icon {
+    /* display: flex;
+    text-align: center;
+    justify-content: center; */
 }
 
 /* ------------- PORTFOLIO -------------  */
