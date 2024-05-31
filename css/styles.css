@@ -212,6 +212,7 @@ img {
     min-width: 169px;
     height: 56px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0, 15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
@@ -317,7 +318,6 @@ img {
 .network-list-item {
     width: 40px;
     height: 40px;
-
 }
 
 .team-network-link {
@@ -334,14 +334,9 @@ img {
 
 .team-network-link:hover {
     background-color: #404BBF;
-    ;
 }
 
-.network-icon {
-    /* display: flex;
-    text-align: center;
-    justify-content: center; */
-}
+.network-icon {}
 
 /* ------------- PORTFOLIO -------------  */
 
@@ -363,7 +358,6 @@ img {
 .portfol-list-item {
     background-color: #ffffff;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .portfol-list-item:hover {
@@ -374,7 +368,6 @@ img {
 
 .portfol-list-item:hover .portfolio-overlay-descr {
     transform: translate(0);
-
 }
 
 .portfolio-overlay {
@@ -488,7 +481,7 @@ img {
     fill: #f4f4fd;
     width: 100%;
     height: 100%;
-    /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-link:hover {
